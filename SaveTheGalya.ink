@@ -30,16 +30,16 @@ INCLUDE part2.ink
 === first_choise ===
 # CLEAR
 
-* [Сталкер Жора]->stalker_1
-* [Технолог Щукин]->technolog_1
++ [Сталкер Жора]->stalker_1
++ [Технолог Щукин]->technolog_1
 
-* [Глаза]->eyes
-* [Подземелье]->underground
++ [Глаза]->eyes
++ [Подземелье]->underground
 
-* [Технолог Щукин 2]->technolog_2
-* [Сталкер Жора 2]->stalker_2
++ [Технолог Щукин 2]->technolog_2
++ [Сталкер Жора 2]->stalker_2
 
-* [Финал]->final
++ [Финал]->final
 
 # part1.ink
 # part2.ink
