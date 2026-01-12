@@ -85,6 +85,7 @@
 ->DONE
 
 === stalker_2 ===
+#CLEAR
 Сталкер Жора # CLASS: h2
 
 = castle_img
