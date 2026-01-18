@@ -10,7 +10,6 @@ INCLUDE part2.ink
 
 === toc ===
 # CLEAR
-Заглавие # CLASS: h1
 
 + [Из Отчета] -> report
 + [Сталкер Жора] -> stalker_1
