@@ -7,10 +7,8 @@ body {
     overflow: hidden;
 }
 
-@media screen and (prefers-reduced-motion: no-preference) {
-    body.switched {
-        transition: color 0.6s, background-color 0.6s;
-    }
+body.switched {
+    transition: color 0.6s, background-color 0.6s;
 }
 
 h1,
@@ -56,6 +54,7 @@ h2 {
     display: block;
     width: 100%;
     background: white;
+    transition: color 0.6s, background 0.6s;
     margin: 0;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -63,13 +62,7 @@ h2 {
     top: 0;
 }
 
-@media screen and (prefers-reduced-motion: no-preference) {
-    .written-in-ink {
-        transition: color 0.6s, background 0.6s;
-    }
-}
-
-/* 
+/*
   Enables <iframe> support work on itch.io when using mobile iOS
 */
 .outerContainer {
@@ -106,10 +99,8 @@ h2 {
     background: white;
 }
 
-@media screen and (prefers-reduced-motion: no-preference) {
-    .switched .container {
-        transition: background-color 0.6s;
-    }
+.switched .container {
+    transition: background-color 0.6s;
 }
 
 p {
@@ -123,29 +114,13 @@ a {
     font-weight: 700;
     color: #b97c2c;
     font-family: sans-serif;
+    transition: color 0.6s;
     text-decoration: none;
-}
-
-.unclickable {
-    font-weight: 700;
-    color: #4f3411;
-    font-family: sans-serif;
-    text-decoration: none;
-    cursor: not-allowed;
 }
 
 a:hover {
     color: black;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-    a {
-        transition: color 0.6s;
-    }
-
-    a:hover {
-        transition: color 0.1s;
-    }
+    transition: color 0.1s;
 }
 
 strong {
@@ -169,12 +144,7 @@ img {
 
 .container>* {
     opacity: 1.0;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-    .container>* {
-        transition: opacity 1.0s;
-    }
+    transition: opacity 1.0s;
 }
 
 /*
@@ -186,7 +156,7 @@ img {
     line-height: 1.7em;
 }
 
-/* 
+/*
   Class applied to first choice
 */
 :not(.choice)+.choice {
@@ -196,11 +166,11 @@ img {
 /*
   Class applied to choice links
 */
-.choice a, .choice span {
+.choice a {
     font-size: 15pt;
 }
 
-/* 
+/*
   Built-in class:
     The End # CLASS: end
 */
@@ -222,12 +192,7 @@ img {
     top: 4px;
     user-select: none;
     background: white;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-    #controls {
-        transition: color 0.6s, background 0.6s;
-    }
+    transition: color 0.6s, background 0.6s;
 }
 
 #controls [disabled] {
@@ -248,7 +213,7 @@ img {
     }
 }
 
-/* 
+/*
   Dark Theme (Added in Inky 0.10.0)
     # theme: dark
 */
@@ -272,20 +237,11 @@ body.dark {
 
 .dark a {
     color: #cc8f1a;
-}
-.dark .unclickable{
-    color: #c4af87;
-    cursor:not-allowed;
+    transition: color 0.6s;
 }
 
 .dark a:hover {
     color: white;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-    .dark a {
-        transition: color 0.6s;
-    }
 }
 
 .dark strong {
